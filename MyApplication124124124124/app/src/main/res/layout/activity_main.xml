@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainWindow">
+
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textInfoWaiter"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="74dp"
+        android:text="Создать  " />
+
+    <TextView
+        android:id="@+id/txtInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnRead"
+        android:layout_centerHorizontal="true"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/btnRead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCreate"
+        android:layout_alignStart="@+id/btnCreate"
+        android:layout_alignLeft="@+id/btnCreate"
+        android:layout_marginTop="50dp"
+        android:text="Продолжить " />
+
+    <Button
+        android:id="@+id/btnCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textInfoWaiter"
+        android:layout_marginStart="-3dp"
+        android:layout_marginLeft="-3dp"
+        android:layout_marginTop="69dp"
+        android:layout_toEndOf="@+id/txtInfo"
+        android:layout_toRightOf="@+id/txtInfo"
+        android:text="Готовность" />
+
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnRead"
+        android:layout_alignEnd="@+id/btnCheck"
+        android:layout_alignRight="@+id/btnCheck"
+        android:text="Закріть" />
+
+    <EditText
+        android:id="@+id/dish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtInfo"
+        android:layout_alignStart="@+id/btnRead"
+        android:layout_alignLeft="@+id/btnRead"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="Блюдо"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dish"
+        android:layout_alignStart="@+id/dish"
+        android:layout_alignLeft="@+id/dish"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:hint="Количество"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/table"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/count"
+        android:layout_alignStart="@+id/count"
+        android:layout_alignLeft="@+id/count"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:hint="Столик"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textInfoWaiter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="35dp"
+        android:text="12" />
+
+    <TextView
+        android:id="@+id/numberOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="9dp"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dish"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="24dp"
+        android:text="Подтвердить" />
+
+</RelativeLayout>
